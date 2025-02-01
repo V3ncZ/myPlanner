@@ -38,6 +38,13 @@ nav {
     gap: 10px;
 }
 
+.links {
+    display: flex;
+    width: 40%;
+    justify-content: space-evenly;
+    font-size: 30px;
+}
+
 ul {
     list-style: none;
     display: flex;
