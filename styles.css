@@ -1,0 +1,100 @@
+:root {
+    --background-color: #342E36;
+    --primary-color: #1E1E1E;
+    --secondary-color: #9BAEBC;
+    --text-color: #ffffff;
+    --primary-font: "Ubuntu", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--background-color);
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ccc;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    height: 88px;
+    width: 100%;
+}
+
+.nav_holder {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.titulo {
+    font-family: var(--primary-font);
+    font-size: 3.5rem;
+    color: var(--text-color);
+    margin-top: 4rem;
+    margin-left: 4rem;
+}
+
+.container {
+    background-color: var(--primary-color);
+    margin-left: 2rem;
+    display: inline-block;
+    height: 600px;
+    width: 396px;
+    border-radius: 4px;
+    color: var(--text-color);
+}
+
+.adicionar {
+    margin-top: 18px;
+    margin-left: 10px;
+}
+
+.holder {
+    background-color: var(--secondary-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 2rem;
+    width: 278px;
+    height: 260px;
+    border-radius: 8px;
+}
+
+.titulo_tarefa {
+    margin-top: 0.5rem;
+    padding-left: 38px;
+    font-size: 64px;
+    border-bottom: solid 2px #ffffff;
+
+}
+
+.descricao {
+    margin: 0.5rem;
+    padding-left: 18px;
+    height: 100px;
+}
+
+.data {
+    align-self: flex-end;
+    padding-right: 14px;
+    padding-bottom: 13px;
+}
