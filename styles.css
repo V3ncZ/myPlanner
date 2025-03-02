@@ -12,9 +12,12 @@
     box-sizing: border-box;
 }
 
+html {
+    font-size: 62.5%;
+}
+
 body {
     background-color: var(--background-color);
-
 }
 
 nav {
@@ -29,6 +32,11 @@ nav {
     border-bottom-right-radius: 8px;
     height: 88px;
     width: 100%;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
 }
 
 .nav_holder {
@@ -55,12 +63,11 @@ ul {
     font-family: var(--primary-font);
     font-size: 3.5rem;
     color: var(--text-color);
-    margin-top: 4rem;
-    margin-left: 4rem;
+    margin: 4rem;
+    display: inline-block;
 }
 
 .container {
-    background-color: var(--primary-color);
     margin-left: 2rem;
     display: inline-block;
     height: 600px;
@@ -72,6 +79,8 @@ ul {
 .adicionar {
     margin-top: 18px;
     margin-left: 10px;
+    height: 50px;
+    width: 50px;
 }
 
 .holder {
@@ -83,24 +92,26 @@ ul {
     width: 278px;
     height: 260px;
     border-radius: 8px;
+    box-shadow: 1rem 1rem rgba(0, 0, 0, 0.2);
 }
 
 .titulo_tarefa {
     margin-top: 0.5rem;
-    padding-left: 38px;
-    font-size: 64px;
+    padding-left: 2rem;
+    font-size: 6rem;
     border-bottom: solid 2px #ffffff;
-
 }
 
 .descricao {
     margin: 0.5rem;
     padding-left: 18px;
     height: 100px;
+    font-size: 2rem;
 }
 
 .data {
     align-self: flex-end;
     padding-right: 14px;
     padding-bottom: 13px;
+    font-size: 2rem;
 }
